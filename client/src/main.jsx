@@ -11,6 +11,7 @@ import {
 import Home from "./components/Home.jsx";
 import Footer from "./components/Footer.jsx";
 import Contact from "./components/Contact.jsx";
+import Courses from "./components/Courses.jsx";
 
 //
 const router = createBrowserRouter(
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<App />}>
       <Route path="" element={<Home />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/courses" element={<Courses />} />
     </Route>
   )
 );

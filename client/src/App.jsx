@@ -4,11 +4,13 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <>
+    <div className="bg-black h-screen text-white">
       <Header />
       <Outlet />
-      <Footer />
-    </>
+      <div className="fixed bottom-10 inset-x-0 flex justify-center">
+        <Footer />
+      </div>
+    </div>
   );
 }
 
