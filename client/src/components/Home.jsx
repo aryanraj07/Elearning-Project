@@ -36,17 +36,21 @@ const Home = () => {
   }, []);
   return (
     <div className="h-screen dark:bg-zinc-950">
-      <div className="flex mt-10 gap-20 items-center justify-evenly">
-        <div className="flex flex-col h-100 ">
-          <div className="heading text-6xl font-semibold ">
+      <div className="flex mt-6 gap-20 items-center justify-evenly">
+        <div className="flex flex-col h-100  ml-5 ">
+          <div className="heading text-4xl font-semibold ">
             An integrated platform for
           </div>
-          <span className="text-6xl text-red-500 font-extrabold w-96">
+          <span className="text-5xl text-red-500 font-extrabold w-96">
             {"<"}
             {typedText}
             {"|"}
             {">"}
           </span>
+          <h2 className="mt-6 text-2xl font-semibold ">
+            Aiming to serve as a centralized hub, offering diverse courses,
+            real-time doubt resolution, and collaborative learning.
+          </h2>
           <div className="flex justify-start mt-20">
             <Button variant="destructive">Explore Courses</Button>
           </div>
@@ -55,7 +59,7 @@ const Home = () => {
           <img
             className="rounded-lg outline-none"
             width={470}
-            src="./homelearn.svg"
+            src="./homeedu.jpg"
             alt=""
           />
         </div>

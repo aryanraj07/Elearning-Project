@@ -3,6 +3,8 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import { ThemeProvider } from "./context/themeContext";
 import { useEffect, useState } from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [themeMode, setThemeMode] = useState();
@@ -21,7 +23,9 @@ function App() {
     <div className="dark:bg-indigo-950 h-screen dark:text-white">
       <ThemeProvider value={{ themeMode, lightTheme, darkTheme }}>
         <Header />
+        <ToastContainer />
         <Outlet />
+
         <div className="  flex justify-center">
           <Footer />
         </div>

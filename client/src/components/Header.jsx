@@ -52,7 +52,7 @@ const Header = () => {
           </div>
         </div>
 
-        <ul className="flex gap-14 font-bold items-center text-xl">
+        <ul className="flex gap-14 font-bold items-center text-xl pl-10">
           <NavLink
             className={({ isActive }) =>
               `${
@@ -89,6 +89,16 @@ const Header = () => {
             to="/community"
           >
             Community
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              `${
+                isActive ? "text-purple-900" : "text-black dark:text-white"
+              } hover:font-extrabold duration-300 hover:text-purple-700 hover:text-xl`
+            }
+            to="/"
+          >
+            Elearing360 Lab
           </NavLink>
           <NavLink
             className={({ isActive }) =>
